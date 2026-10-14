@@ -19,7 +19,7 @@ def main():
 
         if scelta == "1":
             nuovo_nome = input("Inserisci il nuovo nome del centro fieristico: ")
-            # TODO: Aggiorna il nome del centro fieristico
+            lingotto.nome = nuovo_nome
 
         elif scelta == "2":
             file_path = "dati_lingotto.csv"
@@ -43,10 +43,10 @@ def main():
             lingotto.elenca_espositori()
 
         elif scelta == "5":
-            stand_ordinati = lingotto.stand_ordinati_per_prezzo()
-            print("\n--- Stand ordinati per prezzo ---")
-            for s in stand_ordinati:
-                print(s)
+            stand_ordinati = lingotto.stand_ordinati_per_prezzo() # Ho cambiato, dato che la mia funzione stampa automaticamente i dati
+            #print("\n--- Stand ordinati per prezzo ---")
+            #for s in stand_ordinati:
+            #   print(s)
 
         elif scelta == "6":
             print("Uscita dal programma.")
